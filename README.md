@@ -443,6 +443,11 @@ Find incident by ID
 - Uses conversational context (recent incidents)
 - Fallback to most recent open incident if no match
 
+
+------
+
+![Material wave loading](https://github.com/user-attachments/assets/a08255eb-9647-471d-9881-61871332249f)
+
 ## Developers
 
 [Sai Nivedh](https://www.github.com/SaiNivedh26)
