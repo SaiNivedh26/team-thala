@@ -17,11 +17,11 @@
 
 <!-- <img width="455" height="549" alt="Gemini_Generated_Image_rahzs0rahzs0rahz-removebg-preview" src="https://github.com/user-attachments/assets/9ed75804-094a-4626-95e1-6c0dd28eb34a" /> -->
 
-<p align="center">
+<!-- <p align="center">
   <a href="https://youtu.be/Uw5dVqHBSAs?si=99UPnVoGxeMgcwxF&t=1970" target="_blank">
     <img width="455" height="549" alt="SuperHack 2025 Winner Badge" src="https://github.com/user-attachments/assets/9ed75804-094a-4626-95e1-6c0dd28eb34a" />
   </a>
-</p>
+</p> -->
 
 
 
@@ -57,7 +57,14 @@
   </a>
 </div>
 
+<br>
 
+<div align="center">
+  <h3>Zoho Workspace Support</h3>
+  <a href="https://github.com/SaiNivedh26/workspace-vita">
+    <img src="https://img.shields.io/badge/Supported%20Platform-Zoho%20Workspace-E42527?logo=zoho&logoColor=white" alt="Zoho Workspace" height="28">
+  </a>
+</div>
 
 
 
