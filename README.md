@@ -21,6 +21,9 @@
   <a href="https://youtu.be/Uw5dVqHBSAs?si=99UPnVoGxeMgcwxF&t=1970" target="_blank">
     <img width="455" height="549" alt="SuperHack 2025 Winner Badge" src="https://github.com/user-attachments/assets/9ed75804-094a-4626-95e1-6c0dd28eb34a" />
   </a>
+  <a href="https://gitcgr.com/SaiNivedh26/team-thala" target="_blank" rel="noopener noreferrer">
+    <img src="https://gitcgr.com/badge/SaiNivedh26/team-thala.svg" alt="gitcgr" />
+  </a>
 </p> -->
 
 
