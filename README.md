@@ -23,6 +23,10 @@
   </a>
 </p> -->
 
+<br> 
+
+## **Read our slides :  [here you go, it hardly takes 2 mins](https://canva.link/sy0lnbg4p8ksv0u)**
+
 
 
 
