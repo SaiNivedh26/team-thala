@@ -1,0 +1,7 @@
+zcatalyst-sdk
+flask
+qdrant-client==1.12.1
+python-dotenv
+requests
+google-genai
+APScheduler
