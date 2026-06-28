@@ -1,0 +1,106 @@
+
+response = Map();
+// Ignore some operations if you want
+if(operation.equals("removed_from_thread") || operation.equals("thread_closed"))
+{
+	return response;
+}
+// Build payload to send to your Flask/ngrok endpoint
+payload = Map();
+payload.put("operation",operation);
+payload.put("user",user);
+// full user map
+payload.put("chat",chat);
+// channel info
+payload.put("data",data);
+// extra data (includes message)
+// Forward to your Flask endpoint
+forwardResponse = invokeurl
+[
+	url :"https://shanna-serious-evenly.ngrok-free.dev/bot/events"
+	type :POST
+	parameters:payload
+];
+// // (Optional) Keep your old bot reply logic
+// botMessage = null;
+// if(operation.equals("added"))
+// {
+// 	botMessage = "Thanks for adding me $USER_MENTION. Hi everyone! :bye-bye:\nI will actively participate in this channel from now on.";
+// }
+// else if(operation.equals("removed"))
+// {
+// 	botMessage = "I've been removed from this channel. Adiós, everyone! :bye-bye:";
+// }
+// else if(operation.equals("message_sent"))
+// {
+// 	botMessage = "$USER_MENTION has sent a message.";
+// }
+// else if(operation.equals("message_edited"))
+// {
+// 	botMessage = "$USER_MENTION has edited a message.";
+// }
+// else if(operation.equals("message_deleted"))
+// {
+// 	botMessage = "Hey there! $USER_MENTION has deleted a message.";
+// }
+// else if(operation.equals("auto_followed_thread"))
+// {
+// 	botMessage = "I've started following this thread automatically. Let's keep ourselves informed together!";
+// }
+// else if(operation.equals("added_in_thread"))
+// {
+// 	botMessage = "Thanks for adding me $USER_MENTION. Hi everyone! :bye-bye:\nI will actively participate in this thread from now on.";
+// }
+// else if(operation.equals("thread_reopened"))
+// {
+// 	botMessage = "This thread has been reopened. I will actively participate in this thread from now on.";
+// }
+// Mention replacement
+// if(botMessage != null)
+// {
+// 	botMessage = botMessage.replaceAll('\' + "$USER_MENTION","{@" + user.get("id") + "}");
+// 	response.put("text",botMessage);
+// }
+return response;
+// response = Map();
+// if(operation.equals("removed_from_thread") || operation.equals("thread_closed"))
+// {
+// 	return response;
+// }
+// botMessage = null;
+// if(operation.equals("added"))
+// {
+// 	botMessage = "Thanks for adding me $USER_MENTION. Hi everyone! :bye-bye:\nI will actively participate in this channel from now on.";
+// }
+// else if(operation.equals("removed"))
+// {
+// 	botMessage = "I've been removed from this channel. Adiós, everyone! :bye-bye:";
+// }
+// else if(operation.equals("message_sent"))
+// {
+// 	botMessage = "$USER_MENTION has sent a message.";
+// }
+// else if(operation.equals("message_edited"))
+// {
+// 	botMessage = "$USER_MENTION has edited a message.";
+// }
+// else if(operation.equals("message_deleted"))
+// {
+// 	botMessage = "Hey there! $USER_MENTION has deleted a message.";
+// }
+// else if(operation.equals("auto_followed_thread"))
+// {
+// 	botMessage = "I've started following this thread automatically. Let's keep ourselves informed together!";
+// }
+// else if(operation.equals("added_in_thread"))
+// {
+// 	botMessage = "Thanks for adding me $USER_MENTION. Hi everyone! :bye-bye:\nI will actively participate in this thread from now on.";
+// }
+// else if(operation.equals("thread_reopened"))
+// {
+// 	botMessage = "This thread has been reopened. I will actively participate in this thread from now on.";
+// }
+// // Using regular expressions to replace the "$USER_MENTION" in the bot message with the syntax for mentioning a user.
+// botMessage = botMessage.replaceAll('\' + "$USER_MENTION","{@" + user.get("id") + "}");
+// response.put("text",botMessage);
+// return response;
